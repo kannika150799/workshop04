@@ -7,6 +7,7 @@ var img5 = document.getElementById("myImg5");
 var modalImg = document.getElementById("img01");
 
 img1.onclick = function () {
+  
   modal.style.display = "block";
   modalImg.src = this.src;
 };
