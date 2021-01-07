@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Rubik-medium;
+  src: url(../access/fonts/Prompt/Prompt-Regular.ttf);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.contanner {
+  position: absolute;
+  /* background-color: rgb(169, 240, 216); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  /* background-color: rgb(243, 227, 165); */
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 30px;
+  grid-template-columns: auto auto auto auto auto;
+}
+.box-card {
+  width: 250px;
+  height: 350px;
+  /* background-color: rgb(232, 248, 202); */
+}
+.card {
+  font-family: Rubik-medium;
+  width: 200px;
+  height: 320px;
+  /* background-color: rgb(253, 255, 255); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.6s;
+}
+.card:hover {
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.image-card {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.name {
+  font-size: 18px;
+  margin: 20px 0px 0px;
+  cursor: pointer;
+}
+.detail {
+  font-size: 14px;
+  margin: 0px;
+  color: #b1aeae;
+}
+.price {
+  font-size: 20px;
+  color: #209f31;
+  /* cursor: pointer; */
+}
+
+.contanner-popup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  position: absolute;
+  padding: 20px;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  /* left: 0;
+  top: 0; */
+  overflow: auto;
+  background-color: rgba(244, 245, 225, 0.9);
+  border-radius: 16px;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  display: flex;
+  margin: auto;
+  max-width: 400px;
+}
+
+/* Add Animation */
+.modal-content{
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  right: 30px;
+  color: rgb(8, 8, 8);
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover {
+  color: rgb(158, 154, 154);
+  text-decoration: none;
+  cursor: pointer;
+}
