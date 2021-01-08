@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Rubik-medium;
+  font-family: Prompt;
   src: url(../access/fonts/Prompt/Prompt-Regular.ttf);
 }
 
@@ -30,7 +30,7 @@ body {
   height: 350px;
 }
 .card {
-  font-family: Rubik-medium;
+  font-family: Prompt;
   width: 200px;
   height: 320px;
   display: flex;
@@ -73,20 +73,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-#myImg:hover {opacity: 0.7;}
-
 /* The Modal (background) */
 .modal {
   position: absolute;
   padding: 20px;
   display: none;
   position: fixed;
-  z-index: 1;
+  /* z-index: 1; */
   overflow: auto;
   background-color: rgba(244, 245, 225, 0.9);
   border-radius: 16px;
@@ -94,7 +87,6 @@ body {
 
 /* Modal Content (image) */
 .modal-content {
-  display: flex;
   margin: auto;
   max-width: 400px;
 }
@@ -114,11 +106,11 @@ body {
 }
 /* The Close Button */
 .close {
+  font-family: Prompt;
   position: absolute;
   right: 30px;
   color: rgb(8, 8, 8);
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 24px;
   transition: 0.3s;
 }
 .close:hover {
