@@ -40,6 +40,6 @@ function myFunction() {
     window.open(
     "https://siamceladon.com/",
     "_blank",
-    "toolbar=yes,scrollbars=yes,resizable=yes,width=600,height=600"
+    "width=600,height=600"
   );
 }

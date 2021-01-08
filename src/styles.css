@@ -11,7 +11,6 @@ body {
 
 .contanner {
   position: absolute;
-  /* background-color: rgb(169, 240, 216); */
   width: 100%;
   height: 100%;
   display: flex;
@@ -20,7 +19,6 @@ body {
   align-items: center;
 }
 .grid {
-  /* background-color: rgb(243, 227, 165); */
   display: grid;
   align-items: center;
   justify-items: center;
@@ -30,21 +28,19 @@ body {
 .box-card {
   width: 250px;
   height: 350px;
-  /* background-color: rgb(232, 248, 202); */
 }
 .card {
   font-family: Rubik-medium;
   width: 200px;
   height: 320px;
-  /* background-color: rgb(253, 255, 255); */
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.6s;
 }
 .card:hover {
-  -ms-transform: scale(1); /* IE 9 */
-  -webkit-transform: scale(1); /* Safari 3-8 */
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
   transform: scale(1.1);
 }
 .image-card {
@@ -67,7 +63,6 @@ body {
 .price {
   font-size: 20px;
   color: #209f31;
-  /* cursor: pointer; */
 }
 
 .contanner-popup {
@@ -92,8 +87,6 @@ body {
   display: none;
   position: fixed;
   z-index: 1;
-  /* left: 0;
-  top: 0; */
   overflow: auto;
   background-color: rgba(244, 245, 225, 0.9);
   border-radius: 16px;
